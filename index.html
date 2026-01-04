@@ -3,51 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Katalog Oleh-Oleh Haji & Umroh Premium dari King Salman Gift. Paket praktis, eksklusif, dan berkesan.">
-    <title>Katalog Oleh-Oleh Haji & Umroh | King Salman Gift</title>
-    
+    <title>Katalog Oleh-Oleh Haji & Umroh </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <style>
         :root { --primary-gold: #c5a059; --dark-green: #1b4332; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; }
         
-        /* Hero Section */
-        .hero-section { 
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1350&q=80'); 
-            background-size: cover; 
-            background-position: center; 
-            color: white; 
-            padding: 80px 0; 
-            text-align: center; 
-        }
+        /* Hero */
+        .hero-section { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; color: white; padding: 100px 0; text-align: center; }
         
         /* Product Card */
-        .card-product { border: none; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.05); margin-bottom: 30px; background: #fff; overflow: hidden; transition: 0.3s; }
-        .card-product:hover { transform: translateY(-5px); }
+        .card-product { border: none; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.05); margin-bottom: 40px; background: #fff; overflow: hidden; }
         .price-now { color: #d90429; font-weight: bold; font-size: 1.6rem; }
         .price-was { text-decoration: line-through; color: #adb5bd; }
+        .badge-premium { background-color: var(--primary-gold); color: white; padding: 5px 15px; border-radius: 50px; font-weight: 600; font-size: 0.8rem; }
         
-        /* Video Container Responsif */
-        .video-container { 
-            position: relative; 
-            padding-bottom: 56.25%; 
-            height: 0; 
-            overflow: hidden; 
-            border-radius: 12px; 
-            margin: 15px 0; 
-            background: #000; 
-        }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        /* Video Container */
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin-top: 15px; background: #000; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
         
-        /* UI Elements */
+        /* Footer & UI */
         footer { background: #1a1a1a; color: #dcdcdc; padding: 60px 0 30px; }
         .footer-logo { max-width: 180px; margin-bottom: 20px; filter: brightness(0) invert(1); }
         .social-icon { width: 45px; height: 45px; background: rgba(255,255,255,0.1); display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: white; transition: 0.3s; text-decoration: none; }
         .social-icon:hover { background: var(--primary-gold); color: white; transform: translateY(-3px); }
         
-        #backToTop { position: fixed; bottom: 30px; right: 30px; display: none; z-index: 1000; border-radius: 50%; width: 50px; height: 50px; border: none; background: var(--primary-gold); color: white; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        #backToTop { position: fixed; bottom: 30px; right: 30px; display: none; z-index: 1000; border-radius: 50%; width: 50px; height: 50px; border: none; background: var(--primary-gold); color: white; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: 0.3s; }
+        #backToTop:hover { background: #b08e4a; }
         
         .section-title { position: relative; padding-bottom: 15px; margin-bottom: 50px; font-weight: 700; text-align: center; }
         .section-title::after { content: ''; width: 70px; height: 4px; background: var(--primary-gold); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
@@ -57,33 +40,45 @@
 
 <header class="hero-section">
     <div class="container px-4">
-        <h1 class="display-5 fw-bold">Paket Oleh-Oleh Haji & Umroh</h1>
-        <p class="lead mt-3">Temukan pilihan oleh-oleh premium dalam kemasan eksklusif dari King Salman Gift. <br>Praktis dan Berkesan untuk Keluarga & Kerabat.</p>
-        <a href="#produk" class="btn btn-warning btn-lg fw-bold mt-3 px-4">LIHAT KATALOG</a>
+        <h1 class="display-5 fw-bold">Paket Oleh-Oleh Haji & Umroh </h1>
+		<p class="lead">Berbagi oleh-oleh merupakan tradisi yang menjadi bagian penting dari perjalanan ibadah haji atau umrah. Selain sebagai kenang-kenangan, oleh-oleh haji dan umrah juga bisa menjadi sarana dakwah dan berbagi keberkahan dengan sesama</p>
+		<p class="lead">Produk Paket Oleh-Oleh Haji & Umroh ini tidak hanya menjadi pilihan tepat bagi para jamaah, tetapi juga mencerminkan kepedulian kami terhadap pengalaman ibadah mereka</p>
+        <p class="lead">Temukan pilihan oleh-oleh haji dan umroh premium dalam kemasan eksklusif dari King Salman Gift. Paket Premium, Praktis, dan Berkesan untuk Keluarga & Kerabat</p>
     </div>
 </header>
 
 <div class="container my-5" id="produk">
     <h2 class="section-title">Katalog Paket Pilihan</h2>
-    
     <div class="row">
         <div class="col-12 card card-product p-4">
             <div class="row align-items-center">
                 <div class="col-md-5 text-center">
                     <img src="https://bit.ly/ShafaGableBox" class="img-fluid rounded shadow-sm mb-3" alt="Paket Shafa Gable Box">
-                    <div class="video-container">
-                        <iframe src="https://www.blogger.com/video.g?token=AD6v5dwnz7gI_i4uRwYmAK_m2olCj3z02d1BTj8PiREQpzgpr1knGbnC6-cZPXBlkJfxDU2o4yTN8PPRsBD1jjc0EiEOfQARLh2LGlkM6qVOSq5BgmnYeQt829cKoOkPJVc9H933h9uc" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-md-7 ps-md-5">
+                    <div class="video-responsive">
+<iframe width="442" height="260" src="https://www.blogger.com/video.g?token=AD6v5dwnz7gI_i4uRwYmAK_m2olCj3z02d1BTj8PiREQpzgpr1knGbnC6-cZPXBlkJfxDU2o4yTN8PPRsBD1jjc0EiEOfQARLh2LGlkM6qVOSq5BgmnYeQt829cKoOkPJVc9H933h9uc" frameborder="0" allowfullscreen=""></iframe>
+</div>
+                </div><br/>
+                <div class="col-md-7">
+					<br/>
                     <h3>1. PAKET SHAFA GABLE BOX</h3>
-                    <p class="text-muted small">Varian: Black, Grey, Galaxy, Gold, Navy</p>
-                    <p><strong>Isi Paket:</strong></p>
-                    <ul class="small">
-                        <li>Gable Box Kurma Premium</li>
-                        <li>Kacang Arab, Kismis Mutiara, Coklat Kerikil</li>
-                        <li>Turkish Choco & Air Zam Zam 40ml</li>
-                    </ul>
+                    <p class="text-muted">Varian: Black, Grey, Galaxy, Gold, Navy</p>
+                    <p><strong>Isi:</strong> <br/>
+					 <ul style="text-align: left;">
+    <li>1x Gable Box Kurma Premium&nbsp;</li>
+    <li>20g Kacang Arab&nbsp;</li>
+    <li>20g Kismis Mutiara&nbsp;</li>
+    <li>20g Coklat Kerikil&nbsp;</li>
+    <li>20g Turkish Choco&nbsp;</li>
+    <li>20g Air Zam Zam 40ml</li>
+  </ul>
+  </p>
+  <p><strong>Ketentuan:</strong> <br/>
+  <ul style="text-align: left;">
+      <li>Tanpa minimal order</li>
+      <li><i>Tidak tersedia custom nama</i></li>
+      <li>Pengiriman dapat dilakukan di hari yang sama</li>
+    </ul>
+  </p>
                     <div class="mb-4">
                         <span class="price-was">Rp 24.500</span><br>
                         <span class="price-now">Rp 19.500</span>
@@ -96,15 +91,33 @@
         <div class="col-12 card card-product p-4">
             <div class="row align-items-center">
                 <div class="col-md-5 text-center">
-                    <img src="https://bit.ly/MarwahTravelPouch" class="img-fluid rounded shadow-sm mb-3" alt="Paket Marwah">
-                    <div class="video-container">
-                        <iframe src="https://www.blogger.com/video.g?token=AD6v5dwLMFo-Yxd0yraCGKwOywGQ2Ae9Ivf9QeS_ENhK5rNaZDaxp09iLxuw4iMDDe2mwAjqajbInfKQ72BqIb6Kh4u-LFubG4XoSXvq9BG1YnAdUPDSVR-Wf6YUfw6_7SUp99C_DzA" allowfullscreen></iframe>
-                    </div>
+                    <img src="https://bit.ly/MarwahTravelPouch" class="img-fluid rounded shadow-sm mb-3" alt="Paket Marwah Travel Pouch">
+                    <div class="video-responsive">
+<iframe width="442" height="260" src="https://www.blogger.com/video.g?token=AD6v5dwLMFo-Yxd0yraCGKwOywGQ2Ae9Ivf9QeS_ENhK5rNaZDaxp09iLxuw4iMDDe2mwAjqajbInfKQ72BqIb6Kh4u-LFubG4XoSXvq9BG1YnAdUPDSVR-Wf6YUfw6_7SUp99C_DzA" frameborder="0" allowfullscreen=""></iframe>
+</div>
                 </div>
-                <div class="col-md-7 ps-md-5">
+				<br/>
+                <div class="col-md-7">
+					<br/>
                     <h3>2. PAKET MARWAH TRAVEL POUCH</h3>
-                    <p class="text-muted small">Varian: Black, Grey, Galaxy, Green, Gold, Navy, Brown</p>
-                    <p><strong>Ketentuan:</strong> Minimal order 25 pcs untuk Custom Nama.</p>
+                    <p class="text-muted">Varian: Black, Grey, Galaxy, Green, Gold, Navy, Brown</p>
+                    <p><strong>Isi:</strong> <ul style="text-align: left;">
+    <li>Kurma Premium 20g </li>
+    <li>Kacang Arab 20g </li>
+    <li>Kismis Mutiara 20g </li>
+    <li>Coklat Kerikil 20g </li>
+    <li>Turkish Choco 20g </li>
+    <li>Air Zam Zam 40ml </li>
+    <li>Almond 20g </li>
+  </ul>
+  </p>
+  <p><strong>Catatan:</strong>
+   <ul style="text-align: left;">
+      <li>Untuk Request Custom Nama & Tulisan, </li>
+      <li>Minimal order: 25 pcs</li>
+      <li>Pre-order: Maks. 7 hari</li>
+    </ul>
+  </p>
                     <div class="mb-4">
                         <span class="price-was">Rp 39.800</span><br>
                         <span class="price-now">Rp 35.500</span>
@@ -113,21 +126,194 @@
                 </div>
             </div>
         </div>
-        
+
+        <div class="col-12 card card-product p-4">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <img src="https://bit.ly/MarwahPrayerSet" class="img-fluid rounded shadow-sm mb-3" alt="Paket Prayer Set">
+                    <div class="video-responsive">
+<iframe width="442" height="260" src="https://www.blogger.com/video.g?token=AD6v5dwKT_ojJ06Kr2i3Pkmq8GuH5I0n8hnZ9sQ2hB5c9MADYpS_vp9t27J-_n-Gg9I7y4Le9LJaeRj7bpHIuOHcHDg9Z-ixNVemzFC1xjK8S7nUVrpa8Xjvml_RGlrpLSNDUlNAF08" frameborder="0" allowfullscreen=""></iframe>
+</div>
+                </div>
+                <div class="col-md-7"><br/>
+                    <br/>
+                    <h3>3. PAKET MARWAH PRAYER SET</h3>
+                    <p class="text-muted">Variant Pouch: Black, Grey, Galaxy, Green, Gold, Navy, Brown</p>
+                    <p><strong>Isi Paket:</strong> <br/>
+<ul style="text-align: left;">
+    <li>Travel Pouch (Custom Nama)&nbsp;</li>
+    <li>Tasbih Mutiara Sintetis 33 Butir (±50g)&nbsp;</li>
+    <li>Sajadah Motif + Pouch Serut (50x100 cm)&nbsp;</li>
+    <li>Mushaf Madinah A7 (604 halaman, tajwid berwarna)&nbsp;</li>
+    <li>Parfum Raudhah 5ml (non-alkohol)&nbsp;</li>
+  </ul>
+  </p>
+  <p><strong>Ketentuan:</strong> <br/>
+  <ul style="text-align: left;">
+    <li>Custom nama tersedia&nbsp;</li>
+    <li>Minimal order 25 pcs&nbsp;</li>
+    <li>Pre-order maks. 7 hari</li>
+  </ul>
+  </p>
+  
+                    <div class="mb-4">
+                        <span class="price-was">Rp 97.850</span><br>
+                        <span class="price-now">Rp 93.500</span>
+                    </div>
+                    <button class="btn btn-success btn-lg w-100 fw-bold" onclick="pick('Paket Marwah Prayer Set', 93500)">PESAN PAKET INI</button>
+                </div>
+            </div>
         </div>
+
+        <div class="col-12 card card-product p-4">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <img src="https://bit.ly/KS-Kurma_Ajwa" class="img-fluid rounded shadow-sm mb-3" alt="Kurma King Ajwa">
+                    <div class="video-responsive">
+<iframe width="442" height="260" src="https://www.blogger.com/video.g?token=AD6v5dyn7yH5dhCir-n_tVfTIutQazuzdSY2HjL6NgTX9dG1FwzdcJaufqxD1nZl8BSU47HgpgMugpa3-7hDHkcTnvRINxhjkZcShoyAGY3qZmCalEQjcJbbLZ1ziwiX2tYOnH9oXBG8" frameborder="0" allowfullscreen=""></iframe>
+</div>
+                </div>
+                <div class="col-md-7">
+                    <br/>
+                    <h3>4. PAKET KURMA KING AJWA</h3>
+                    <p class="text-muted"> Kurma yang dikenal sebagai “Kurma Nabi”, kaya manfaat dan dihargai karena
+  khasiatnya.<br/> Dikemas dalam desain eksklusif, cocok untuk konsumsi pribadi, bingkisan, atau
+  oleh-oleh haji dan umroh.</p>
+                    <p><strong>Keunggulan Kurma King Ajwa</strong> <ul style="text-align: left;">
+					 <li>Melalui proses QC ketat 3 tahap </li>
+    <li>Kurma yang direkomendasikan oleh Rasulullah SAW </li>
+    <li>Kaya manfaat dan khasiat kesehatan </li>
+    <li>Cocok sebagai hadiah spiritual </li>
+    <li>Dikemas secara higienis </li>
+  </ul>
+					</p>
+					<p><strong>Spesifikasi :</strong> <ul style="text-align: left;">
+					<li>Berat bersih per box: 415 gram </li>
+    <li>Berat total kemasan per box: 570 gram </li>
+    <li>Kondisi: Kurma kering, tahan lama pada suhu ruang </li>
+    <li>Asal produk: Arab Saudi </li>
+  </ul>
+					</p>
+					<p><strong>Cocok untuk:</strong> <ul style="text-align: left;">
+					<li>Oleh-oleh ibadah Haji dan Umroh </li>
+    <li>Konsumsi harian pribadi dan keluarga, </li>
+    <li>Bingkisan Ramadhan dan Hari Raya </li>
+    <li>Hadiah eksklusif - spiritual</li>
+  </ul>
+					</p>
+                    <div class="mb-4">
+                        <span class="price-was">Rp 139.500</span><br>
+                        <span class="price-now">Rp 129.000</span>
+                    </div>
+                    <button class="btn btn-success btn-lg w-100 fw-bold" onclick="pick('Kurma King Ajwa', 129000)">PESAN PAKET INI</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 card card-product p-4">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <img src="https://bit.ly/KS_Dates" class="img-fluid rounded shadow-sm mb-3" alt="Kurma King Salman">
+                    <div class="video-responsive">
+<iframe width="442" height="260" src="https://www.blogger.com/video.g?token=AD6v5dyn7yH5dhCir-n_tVfTIutQazuzdSY2HjL6NgTX9dG1FwzdcJaufqxD1nZl8BSU47HgpgMugpa3-7hDHkcTnvRINxhjkZcShoyAGY3qZmCalEQjcJbbLZ1ziwiX2tYOnH9oXBG8" frameborder="0" allowfullscreen=""></iframe>
+</div>
+                </div>
+                <div class="col-md-7">
+                    <br/>
+                    <h3>5. PAKET KURMA KING SALMAN</h3>
+                    <p class="text-muted"> kurma dengan cita rasa manis legit, tekstur unik crispy di luar, lembut di dalam, dan ukuran buah yang besar..<br/> Dikemas dalam desain eksklusif, cocok untuk konsumsi pribadi, bingkisan, atau
+  oleh-oleh haji dan umroh.</p>
+                    <p><strong>Keunggulan Kurma King Salman</strong> <ul style="text-align: left;">
+					 <li>Tekstur crispy di luar, lembut di dalam</li>
+    <li>Rasa manis alami, tidak terlalu kuat</li>
+    <li>Daging buah besar dan tebal</li>
+    <li>Disajikan di Masjid Nabawi, Madinah</li>
+    <li>Proses seleksi ketat & quality control tinggi</li>
+    <li>Asal: Arab Saudi</li>
+    <li>Kemasan eksklusif</li>
+  </ul>
+					</p>
+					<p><strong>Spesifikasi :</strong> <ul style="text-align: left;">
+					<li>Berat bersih per box: 415 gram </li>
+    <li>Berat total kemasan per box: 570 gram </li>
+    <li>Kondisi: Kurma kering, tahan lama pada suhu ruang </li>
+    <li>Asal produk: Arab Saudi </li>
+  </ul>
+					</p>
+					<p><strong>Cocok untuk:</strong> <ul style="text-align: left;">
+					<li>Oleh-oleh ibadah Haji dan Umroh </li>
+    <li>Konsumsi harian pribadi dan keluarga, </li>
+    <li>Bingkisan Ramadhan dan Hari Raya </li>
+    <li>Hadiah eksklusif - spiritual</li>
+  </ul>
+					</p>
+                    <div class="mb-4">
+                        <span class="price-was">Rp 79.800</span><br>
+                        <span class="price-now">Rp 73.500</span>
+                    </div>
+                    <button class="btn btn-success btn-lg w-100 fw-bold" onclick="pick('Kurma King Salman', 73500)">PESAN PAKET INI</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 card card-product p-4">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <img src="https://bit.ly/Rhaudah" class="img-fluid rounded shadow-sm mb-3" alt="Parfum Raudhah">
+                    <div class="video-responsive">
+<iframe width="442" height="260" src="https://www.blogger.com/video.g?token=AD6v5dyZxs6XXmSuelm8iG-OmUxlbFcApBZEfgTttkYjJt8K1YGHnU5z4_pdyokH5-rzUrJWf35-styPRkFNPGQacYxBsRHTrWLZcA5FogneBNOQMnojafaU5gSn-ZYyzsVurqpafZFD" frameborder="0" allowfullscreen=""></iframe>
+</div>
+                </div>
+                <div class="col-md-7">
+                    <br/>
+                    <h3>6. PARFUM RAUDHAH TRAVEL SET</h3>
+                    <p class="text-muted">Komposisi utama: Lemon, Turkish Rose, Vanilla, White Musk, Cedar</p>
+					<p class="text-muted">Parfum Raudhah Travel Set terinspirasi dari taman suci Raudhah di Masjid Nabawi, Madinah. Menghadirkan perpaduan aroma lembut, segar, dan menenangkan, untuk menemani aktivitas harian maupun ibadah dengan nuansa spiritual yang khusyuk</p>
+                    <p><strong>Keunggulan:</strong> <ul style="text-align: left;">
+    <li>Aroma eksklusif khas tanah suci, tidak menyengat </li>
+    <li>
+      Menenangkan hati dan pikiran, cocok untuk ibadah dan aktivitas
+      sehari-hari
+    </li>
+    <li>Ukuran travel-friendly, praktis dibawa ke mana saja </li>
+    <li>Pilihan hadiah istimewa untuk orang tercinta </li>
+    <li>Wangi tahan lama, meningkatkan rasa percaya diri </li>
+    <li>Teman setia perjalanan umrah &amp; haji </li>
+  </ul>
+  </p>
+  <p><strong>Spesifikasi:</strong> <ul style="text-align: left;">
+    <li>Merek: King Salman </li>
+    <li>Tipe: Parfum Travel Set </li>
+    <li>Isi paket: 1 box (5 botol x 5ml) </li>
+    <li>Berat box: 120 gram </li>
+  </ul>
+  </p>
+  <p><strong>Catatan:</strong> <br/>
+  <ul style="text-align: left;">
+    <li>Custom nama <b>tidak tersedia</b>, dan <b>Tanpa Minimal Order</b> </li>
+  </ul>
+                    <div class="mb-4">
+                        <span class="price-was">Rp 115.000</span><br>
+                        <span class="price-now">Rp 98.000</span>
+                    </div>
+                    <button class="btn btn-success btn-lg w-100 fw-bold" onclick="pick('Parfum Raudhah', 98000)">PESAN PAKET INI</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<section id="orderSection" class="bg-light py-5">
+<section id="orderSection" class="bg-white py-5">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card p-4 shadow border-0">
-                    <h3 class="text-center fw-bold mb-4">Formulir Pemesanan</h3>
+                    <h3 class="text-center fw-bold mb-4">Formulir Order</h3>
                     <form id="orderForm">
                         <div class="row g-3">
                             <div class="col-12">
                                 <label class="form-label fw-bold">Nama Lengkap</label>
-                                <input type="text" id="nama" class="form-control" placeholder="Nama penerima" required>
+                                <input type="text" id="nama" class="form-control" placeholder="Nama pemesan" required>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label fw-bold">Pilih Paket</label>
@@ -141,11 +327,11 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label fw-bold">Warna/Varian</label>
+                                <label class="form-label fw-bold">Warna</label>
                                 <input type="text" id="warna" class="form-control" placeholder="Contoh: Gold / Navy">
                             </div>
                             <div class="col-md-4">
-                                <label class="form-label fw-bold">Jumlah (Qty)</label>
+                                <label class="form-label fw-bold">Jumlah</label>
                                 <input type="number" id="qty" class="form-control" value="1" min="1" oninput="calc()">
                             </div>
                             <div class="col-md-8">
@@ -153,27 +339,27 @@
                                 <input type="text" id="hargaLabel" class="form-control bg-light" readonly>
                             </div>
                             <div class="col-12">
-                                <label class="form-label fw-bold">Alamat Lengkap</label>
-                                <textarea id="alamat" class="form-control" rows="3" placeholder="Nama Jalan, No Rumah, Kec, Kota, Prov" required></textarea>
+                                <label class="form-label fw-bold">Alamat Lengkap Pengiriman</label>
+                                <textarea id="alamat" class="form-control" rows="3" placeholder="Jl. Nama jalan, Kec, Kota, Kode Pos, Prov" required></textarea>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label fw-bold">Custom Nama?</label>
                                 <select id="isCustom" class="form-select">
                                     <option value="Tidak">Tidak</option>
-                                    <option value="Ya">Ya (Min. 25 pcs)</option>
+                                    <option value="Ya (Minimal 25 pcs)">Ya (Min. 25 pcs)</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label fw-bold">Teks Custom</label>
-                                <input type="text" id="teksCustom" class="form-control" placeholder="Tulisan yang dicetak">
+                                <label class="form-label fw-bold">Keterangan Nama</label>
+                                <input type="text" id="teksCustom" class="form-control" placeholder="Teks yang ingin dicetak">
                             </div>
-                            <div class="col-12 py-3 border-top mt-4 text-end">
-                                <h4>Total: <span id="totalTxt" class="text-success fw-bold">Rp 0</span></h4>
-                                <p class="text-muted small">*Belum termasuk ongkir</p>
+                            <div class="col-12 py-3 border-top mt-4">
+                                <h4 class="text-end">Total Biaya: <span id="totalTxt" class="text-success fw-bold">Rp 0</span></h4>
+                                <p class="text-muted small text-end">*Belum termasuk ongkos kirim</p>
                             </div>
                             <div class="col-12">
                                 <button type="button" onclick="kirimWA()" class="btn btn-success btn-lg w-100 fw-bold">
-                                    <i class="fab fa-whatsapp me-2"></i> KIRIM PESANAN KE WHATSAPP
+                                    <i class="fab fa-whatsapp me-2"></i> KIRIM VIA WHATSAPP
                                 </button>
                             </div>
                         </div>
@@ -187,16 +373,21 @@
 <footer>
     <div class="container text-center">
         <img src="https://bit.ly/KS_Logo1" alt="Logo King Salman" class="footer-logo">
+        
         <div class="mb-4">
-            <p class="mb-1 fw-bold">Pusat Produksi & Distribusi King Salman Gift</p>
-            <p class="small">Jl. Sukamanah, Kec. Cisaat, Sukabumi, Jawa Barat</p>
+            <h5 class="fw-bold text-white mb-2">Lokasi Pengiriman</h5>
+            <p class="mb-1">Pusat Produksi & Distribusi King Salman Gift</p>
+            <p class="small">Jl. Sukamanah, Kec. Cisaat - Kabupaten Sukabumi, Jawa Barat</p>
         </div>
-        <div class="d-flex justify-content-center gap-3 mb-4">
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+
+        <div class="d-flex justify-content-center gap-3 mb-5">
+            <a href="https://www.instagram.com/kiosq.online?igsh=ODVvYXRsazlqNjlh" target="_blank" class="social-icon"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://web.facebook.com/ReviewProduk123" target="_blank" class="social-icon"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="http://www.youtube.com/@mitra6216" target="_blank" class="social-icon"><i class="fab fa-youtube fa-lg"></i></a>
         </div>
-        <p class="small text-secondary">&copy; 2026 King Salman Seller Team. All Rights Reserved.</p>
+
+        <hr class="border-secondary opacity-25 mb-4">
+        <p class="small text-secondary mb-0">&copy; 2025 King Salman Seller Team. All Rights Reserved.</p>
     </div>
 </footer>
 
@@ -204,65 +395,68 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+    // Kalkulasi Harga Otomatis
     function calc() {
-        const paket = document.getElementById('paket');
-        const harga = paket.options[paket.selectedIndex].getAttribute('data-price');
-        const qty = document.getElementById('qty').value || 1;
-        const total = harga * qty;
+        let paket = document.getElementById('paket');
+        let harga = paket.options[paket.selectedIndex].getAttribute('data-price');
+        let qty = document.getElementById('qty').value;
+        let total = harga * qty;
 
         document.getElementById('hargaLabel').value = "Rp " + parseInt(harga).toLocaleString('id-ID');
         document.getElementById('totalTxt').innerText = "Rp " + total.toLocaleString('id-ID');
     }
 
+    // Fungsi Pilih Produk dari Katalog
     function pick(name, price) {
         document.getElementById('paket').value = name;
         calc();
         document.getElementById('orderSection').scrollIntoView({behavior: 'smooth'});
     }
 
+    // Fungsi Kirim ke WhatsApp
     function kirimWA() {
-        const noWA = "6285971103136";
-        const nama = document.getElementById('nama').value;
-        const almt = document.getElementById('alamat').value;
-        
-        if(!nama || !almt) { 
-            alert("Mohon lengkapi Nama dan Alamat pengiriman."); 
-            return; 
-        }
+        let noWA = "6285971103136"; // GANTI NOMOR WA ANDA DI SINI
+        let nama = document.getElementById('nama').value;
+        let pakt = document.getElementById('paket').value;
+        let wrna = document.getElementById('warna').value;
+        let jmlh = document.getElementById('qty').value;
+        let almt = document.getElementById('alamat').value;
+        let cstm = document.getElementById('isCustom').value;
+        let tksC = document.getElementById('teksCustom').value;
+        let totl = document.getElementById('totalTxt').innerText;
 
-        const pakt = document.getElementById('paket').value;
-        const wrna = document.getElementById('warna').value || "-";
-        const jmlh = document.getElementById('qty').value;
-        const cstm = document.getElementById('isCustom').value;
-        const tksC = document.getElementById('teksCustom').value || "-";
-        const totl = document.getElementById('totalTxt').innerText;
+        if(!nama || !almt) { alert("Harap isi Nama dan Alamat!"); return; }
 
-        const msg = `*PESANAN OLEH-OLEH KING SALMAN*\n` +
-                    `------------------------------\n` +
-                    `*Nama:* ${nama}\n` +
-                    `*Alamat:* ${almt}\n` +
-                    `*Paket:* ${pakt}\n` +
-                    `*Varian:* ${wrna}\n` +
-                    `*Jumlah:* ${jmlh} pcs\n` +
-                    `*Custom Nama:* ${cstm}\n` +
-                    `*Teks:* ${tksC}\n` +
-                    `------------------------------\n` +
-                    `*TOTAL: ${totl}*\n\n` +
-                    `Mohon segera diinfokan ongkirnya, terima kasih.`;
+        let msg = `*PESANAN OLEH-OLEH KING SALMAN*%0A` +
+                  `------------------------------%0A` +
+                  `*Nama:* ${nama}%0A` +
+                  `*Alamat:* ${almt}%0A` +
+                  `*Paket:* ${pakt}%0A` +
+                  `*Varian Warna:* ${wrna}%0A` +
+                  `*Jumlah:* ${jmlh} pcs%0A` +
+                  `*Custom Nama:* ${cstm}%0A` +
+                  `*Teks Custom:* ${tksC || '-'}%0A` +
+                  `------------------------------%0A` +
+                  `*TOTAL BIAYA: ${totl}*%0A` +
+                  `_Metode: Transfer BCA_%0A%0A` +
+                  `Mohon diproses, terima kasih.`;
 
-        const encodedMsg = encodeURIComponent(msg);
-        window.open(`https://api.whatsapp.com/send?phone=${noWA}&text=${encodedMsg}`, '_blank');
+        window.open(`https://api.whatsapp.com/send?phone=${noWA}&text=${msg}`, '_blank');
     }
 
+    // Back To Top Logic
     window.onscroll = function() {
-        const btn = document.getElementById("backToTop");
-        if (document.documentElement.scrollTop > 400) { btn.style.display = "block"; } 
-        else { btn.style.display = "none"; }
+        let btn = document.getElementById("backToTop");
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
     };
     function toTop() { window.scrollTo({top: 0, behavior: 'smooth'}); }
     
-    // Jalankan kalkulasi saat halaman dimuat
-    window.onload = calc;
+    // Initial Run
+    calc();
 </script>
 
 </body>
